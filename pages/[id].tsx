@@ -5,7 +5,7 @@ import React, { FormEventHandler, useEffect, useState } from "react";
 import { TodoType, useStore } from "./components/Store/StoreTodos";
 import { motion } from "framer-motion";
 
-function editTodo({}) {
+function EditTodo({}) {
   // const singleTodo = useStore((state) => state.getSingleTodo);
   const todos = useStore((state) => state.todos);
   const updateTodo = useStore((state) => state.updateTodo);
@@ -39,4 +39,4 @@ function editTodo({}) {
   );
 }
 
-export default editTodo;
+export default EditTodo;
