@@ -1,0 +1,43 @@
+.todoContainer {
+  display: grid;
+  justify-content: center;
+  background-color: rgba(170, 197, 196, 0.698);
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.205);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 50px 50px;
+}
+
+.todoText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px;
+  font-size: 3vw;
+}
+
+.flexColumnButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.editButton {
+  text-transform: uppercase;
+  display: block;
+  justify-content: center;
+  margin: 5px;
+}
+
+.editButton.edit {
+  flex: 1;
+}
+
+.todoCard {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+}
