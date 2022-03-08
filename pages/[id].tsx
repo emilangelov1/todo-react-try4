@@ -12,7 +12,7 @@ function editTodo({}) {
   const { query, push } = useRouter();
   const id = query.id;
   const singleTodo = todos.find((todo) => todo.id === query.id);
-  const [editTodo, setEditTodo] = useState("");
+  const [useEditTodo, setUseEditTodo] = useState("");
 
   return (
     <div>
@@ -21,7 +21,7 @@ function editTodo({}) {
           onSubmit={(e) => {
             let praznoTodo: TodoType = {
               ...singleTodo,
-              title: editTodo,
+              title: useEditTodo,
             };
 
             updateTodo(praznoTodo);
@@ -30,7 +30,7 @@ function editTodo({}) {
         >
           <Input
             defaultValue={singleTodo.title}
-            onChange={(e) => setEditTodo(e.target.value)}
+            onChange={(e) => setUseEditTodo(e.target.value)}
           />
           <button type="submit">Save</button>
         </form>
