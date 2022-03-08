@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Todos } from "./components/Todos/Todos";
+import { Todos } from "../components/Todos/Todos";
 
 const Home: NextPage = () => {
   return (

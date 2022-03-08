@@ -2,7 +2,7 @@ import { Button, Input } from "antd";
 import Link from "next/link";
 import { Router, useRouter } from "next/router";
 import React, { FormEventHandler, useEffect, useState } from "react";
-import { TodoType, useStore } from "./components/Store/StoreTodos";
+import { TodoType, useStore } from "../components/Store/StoreTodos";
 import { motion } from "framer-motion";
 
 function EditTodo({}) {
